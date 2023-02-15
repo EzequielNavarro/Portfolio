@@ -1,0 +1,48 @@
+/* ### ETIQUETAS GENERALES ###*/
+body{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+main{
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* ANIMACION NAVBAR */
+/* #navbar-example{
+    background-color: rgba(33, 37, 41,1) ;
+    animation: onLoad 3s ease !important;
+}
+#navbarNav ul li a{
+    color: rgba(255, 255, 255, 1);
+    animation: onLoad2 3s ease !important;
+}
+@keyframes onLoad {
+    0%{
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(33, 37, 41,1);
+    }
+}
+@keyframes onLoad2 {
+    0%{
+        color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        color: rgba(255, 255, 255, 1);
+    }
+} */
+
+
+

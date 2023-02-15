@@ -1,0 +1,227 @@
+// Include any default variable overrides here (though functions won't be available)
+$success: rgb(85, 172, 4);
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom BOOTSTRAP code here
+body {
+    color: $success;
+    @include gradient-x-three-colors($start-color: $gray-900, $mid-color: $gray-800, $color-stop: 50%, $end-color: $gray-900);
+}
+header svg{
+    transition: transform 0.1s ease;
+}
+header svg:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* =======  ========  ======= */
+/* ======= CSS NORMAL ======= */
+.border-verde{
+    border-radius: 10px;
+    border: solid 0.3px $success;
+    
+    dd{
+        color: $light;
+    }
+}
+/* HEADER ID CONTACTO */
+#contacto{
+    margin-top: -0.3%;
+}
+/* SKILLS CLASES ID */
+.icono-skill{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.icono-skill:hover{
+    transform: scale(105%);
+}
+
+/* FEATURES ID - CLASES */
+#imagen-carta1{
+    background-image: url('/img/skills/css.png');
+    background-position: center;
+    transition: 0.5s ease;
+}
+#imagen-carta2{
+    background-image: url('/img/image_card2.jpg');
+    background-position: center;
+    transition: 0.5s ease;
+}
+#imagen-carta3{
+    background-image: url('/img/image-card3.png');
+    background-position: center;
+    transition: 0.5s ease;
+}
+.carta-escalado:hover{
+    transform: scale(107%);
+    cursor: pointer;
+   
+}
+
+/* Swiper slider */
+.swiper {
+    width: 100%;
+    height: 73vh;
+    @include gradient-x-three-colors($start-color: $gray-900, $mid-color: $gray-800, $color-stop: 50%, $end-color: $gray-900);
+  }
+
+.swiper-slide {
+    font-size: 18px;
+    color: $success;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.swiper-slide .title-swiper {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle-swiper {
+    font-size: 21px;
+}
+
+.swiper-slide .text-swiper {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+/* ======= ======================== ======= */
+/* ======= CSS BOOTSTRAP .CLASES ID ======= */
+
+/* NAVBAR */
+
+
+#negrita-nav li a{
+    font-style: italic;
+    font-weight: bold;
+}
+#nombre{
+    transition: border 0.5s ease;
+    p::first-letter{
+        color: $success;
+    }
+    p::first-line{
+        color: $light;
+    }
+}
+#nombre:hover{
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: $success;
+}
+.nav-hover{
+    transition: all 0.5s ease;
+}
+.nav-hover:hover{
+    border-radius: 5px;
+    background-color: $success;
+    
+}
+.navbar{
+    padding: 0%;
+    margin: 0
+}
+#navbar-example{
+    background-color: rgba(33, 37, 41,1);
+    animation: onLoad 3s ease !important;
+    #navbarNav a{
+        color: rgba(255, 255, 255, 1);
+        animation: onLoad 3s ease !important;
+    }
+}
+/* ANIMACION NAVBAR */
+@keyframes onLoad {
+    0%{
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(33, 37, 41,1);
+    }
+}
+
+/* CARD'S */
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: transparent !important;
+    border-bottom: $dark solid 0.1px !important;
+}
+
+/* ACCORDIONS */
+
+#panelsStayOpen-collapseOne h4, #panelsStayOpen-collapseTwo h4, #panelsStayOpen-collapseThree h4{
+    transition: transform 0.25s ease-in-out;
+}
+#panelsStayOpen-collapseOne h4:hover, #panelsStayOpen-collapseTwo h4:hover, #panelsStayOpen-collapseThree h4:hover{
+    transform: scale(1.0) !important;
+    cursor: pointer;
+}
+#panelsStayOpen-collapseThree a{
+    transition: color 0.25s linear;
+}
+#panelsStayOpen-collapseThree a:hover{
+    color: $success !important;
+}
+.mensaje-copiado, .mensaje-copiado2 {
+    display: none;
+    position: absolute;
+    top: -1%;
+    right: 37%;
+    padding: 0px 0px;
+    background-color: $success;
+    color: $dark !important;
+    border-radius: 5px;
+  }
+
+
+
+
+/* // ======= PANTALLAS SMALL (sm) ======= */
+@media(min-width: 576px) and (max-width: 767.98px){
+}
+/* // ======= PANTALLAS NORMALES (md) ======= */
+@media(min-width: 768px) and (max-width: 991.98px){
+}
+
+/* // ======= PANTALLAS LARGAS MI PANTALLA (lg)======= */
+@media(min-width: 992px) and (max-width: 1199.98px){
+}
+/* // ======= PANTALLAS EXTRA LARGA LARGAS (xl) ======= */
+@media (min-width: 1200px) and (max-width: 1399.98px){
+}
+
+/* // ======= PANTALLAS EXTRA EXTRA LARGA LARGAS (xxl)======= */
+@media(min-width: 1400px){
+}
+
+/* // md applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// lg applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// xl applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// xxl applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... } */
